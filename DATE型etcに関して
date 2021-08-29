@@ -13,3 +13,6 @@ DATETIME型
 TIMESTAMP型
   insertまたはupdate操作に対して、現在の日付と時刻を自動的に指定することができる。TIMESTAMP型のカラムが複数ある場合は、最初のカラムのみが自動で更新される。
   故に、created_atは　DATETIME型でつくり、updated_atはTIMESTAMP型で作る。
+
+
+参考:https://enumorish.hatenablog.com/entry/20101114/1289733321
