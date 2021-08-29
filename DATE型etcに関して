@@ -1,0 +1,15 @@
+DATE型
+  文字通り、日付のみ
+  'YYYY-MM-DD'
+  範囲は'1000-01-01' 〜 '9999-12-31'
+
+
+DATETIME型
+  日付と時間の両方が入る
+  'YYYY-MM-DD HH:MM:SS'
+  範囲は'1000-01-01 00:00:00' 〜 '9999-12-31 23:59:59'
+
+
+TIMESTAMP型
+  insertまたはupdate操作に対して、現在の日付と時刻を自動的に指定することができる。TIMESTAMP型のカラムが複数ある場合は、最初のカラムのみが自動で更新される。
+  故に、created_atは　DATETIME型でつくり、updated_atはTIMESTAMP型で作る。
